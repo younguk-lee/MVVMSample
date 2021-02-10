@@ -1,0 +1,25 @@
+﻿<Window x:Class="Calcurator_Event.MainWindow_Event"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow_Event" Height="276" Width="477"
+        xmlns:local="clr-namespace:Calcurator_Event">
+
+    <Window.Resources>
+        <local:DataModel x:Key="myDataModel" />
+    </Window.Resources>
+    
+    <Grid>
+        <TextBlock FontSize="36"
+                   Name="txtTitle"
+                   Text="Welcome to MVVM Light [design]"
+                   FontWeight="Bold"
+                   Foreground="Purple"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap" Margin="44,22,24,116" Height="110" Width="365" />
+        <Button Name="button_plus" Content="+" HorizontalAlignment="Left" Margin="223,158,0,0" VerticalAlignment="Top" Width="75" Click="button_plus_Click"/>
+        <Button Name="button_minus" Content="-" HorizontalAlignment="Left" Margin="334,158,0,0" VerticalAlignment="Top" Width="75" Click="button_minus_Click"/>
+        <Label Name="lblCount" Content="100000" HorizontalAlignment="Left" Margin="59,158,0,0" VerticalAlignment="Top" Width="146"/>
+        <Button Name="button_subwindow" Content="Open Sub Window" HorizontalAlignment="Left" Margin="294,199,0,0" VerticalAlignment="Top" Width="115"  Height="29" Click="button_subwindow_Click"/>
+    </Grid>
+</Window>
